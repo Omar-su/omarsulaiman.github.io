@@ -1,0 +1,20 @@
+.main-info {
+  display: flex;
+  align-items: center;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+
+}
+
+.main-info img {
+  margin-right: 20px;
+  max-width: 600px; /* set a max width for the image to prevent it from stretching the container */
+  min-height: 600px;
+  position: absolute;
+  top: 50%; /* position the top of the image in the middle of the container */
+  left: 200% ; /* position the right side of the image against the right edge of the container */
+  transform: translateY(-50%); /* move the image up by 50% of its own height to center it vertically */
+}

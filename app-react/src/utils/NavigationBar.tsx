@@ -1,26 +1,56 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import './Navigation.css'
+import { useState } from "react";
+import { useLocation } from 'react-router-dom';
 
-
-export function NavBar(){
-
+export function NavBar() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("");
 
   const navigatePage = (link: string) => {
     navigate(link);
-  }
+    setActiveLink(link);
+  };
 
-
-  return(
-        <nav className="navbar nav-bar">
-          <div className='portfolio-name'onClick={() => navigatePage("/home")}>Omar Sulaiman</div>
-          <div className='nav-right-elements'>
-            <span onClick={() => navigatePage("/home")}>Home</span>
-            <span onClick={() => navigatePage("/media")}>Media</span>
-            <span onClick={() => navigatePage("/projects")}>Projects</span>
-            <span onClick={() => navigatePage("/contact")}>Contact</span>
-            <span onClick={() => navigatePage("/about-me")}>About</span>
-          </div>
-        </nav>);
+  return (
+    <nav className="navbar nav-bar">
+      <div className="portfolio-name" onClick={() => navigatePage("/home")}>
+        Omar Sulaiman
+      </div>
+      <div className="nav-right-elements">
+        <span
+          className={location.pathname === "/home" || activeLink === "/home" ? "nav-active-element" : ""}
+          onClick={() => navigatePage("/home")}
+        >
+          Home
+        </span>
+        <span
+          className={location.pathname === "/media" || activeLink === "/media" ? "nav-active-element" : ""}
+          onClick={() => navigatePage("/media")}
+        >
+          Media
+        </span>
+        <span
+          className={location.pathname === "/projects" || activeLink === "/projects" ? "nav-active-element" : ""}
+          onClick={() => navigatePage("/projects")}
+        >
+          Projects
+        </span>
+        <span
+          className={location.pathname === "/contact" || activeLink === "/contact" ? "nav-active-element" : ""}
+          onClick={() => navigatePage("/contact")}
+        >
+          Contact
+        </span>
+        <span
+          className={location.pathname === "/about-me" || activeLink === "/about-me" ? "nav-active-element" : ""}
+          onClick={() => navigatePage("/about-me")}
+        >
+          About
+        </span>
+      </div>
+    </nav>
+  );
 }
