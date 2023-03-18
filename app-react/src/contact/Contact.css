@@ -1,3 +1,63 @@
-.text {
+.contact-info{
+  display: flex;
+  flex-direction: column; /* Add this line to stack child elements vertically */
+  align-items: center;
   color: white;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 35%;
+
+}
+
+.contact-form{
+  margin-top: 300px;
+  margin-left: 320px;
+  width: 900px;
+  color: white;
+}
+
+.form-row{
+  display: flex; /* Add this line to make the child elements placed beside each other */
+  flex-wrap: wrap; /* Add this line to allow the elements to wrap to the next line if necessary */
+}
+
+.form-group {
+  flex: 1; /* Add this line to make the child elements grow to fill the available space */
+  margin-left: 20px; /* Add this line to add some spacing between the child elements */
+  margin-top: 20px
+}
+
+.message-form textarea{
+  height: 200px;
+
+}
+
+
+.btn{
+  margin-left: 20px;
+  margin-top: 70px;
+  width: 150px;
+  background-color:  rgba(78, 177, 186, 0.5);
+  color: white;
+  border: 5px solid transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.09rem;
+}
+
+.btn:hover{
+  border-radius: 20px;
+  background-color: orange;
+  border: 5px solid orange;
+  color: #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow on hover */
+}
+
+.btn:active{
+    background-color: orange;
 }
