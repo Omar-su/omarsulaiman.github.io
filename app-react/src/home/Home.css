@@ -1,20 +1,107 @@
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: RGB(45, 255, 251);
+  --text-color: #fff;
+  --main-color: orange;
+}
+
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+
 .main-info {
   display: flex;
+  justify-content: center;
   align-items: center;
   color: white;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
+}
+
+.social-media{
+  flex-basis: 100%; /* Set the width of the social media container */
+  text-align: left; /* Align the social media icons to the left */
+}
+
+.social-media a{
+  display: inline-flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid orange;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: RGB(45, 255, 251);
+  margin: 3rem 1.5rem 3rem 0rem;
+  transition: .5s ease;
+  text-decoration: none;
 
 }
 
-.main-info img {
-  margin-right: 20px;
-  max-width: 600px; /* set a max width for the image to prevent it from stretching the container */
-  min-height: 600px;
-  position: absolute;
-  top: 50%; /* position the top of the image in the middle of the container */
-  left: 200% ; /* position the right side of the image against the right edge of the container */
-  transform: translateY(-50%); /* move the image up by 50% of its own height to center it vertically */
+.social-media a:hover{
+  background: orange;
+  color: white;
+  box-shadow: 0 0 1rem orange;
+}
+
+.social-media a i{
+  margin-top: .8rem;
+  
+}
+
+.info {
+  flex-basis: 55%; /* Set the width of the text content container */
+  margin-top: 3rem;
+
+}
+
+.info h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.info h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.info h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.info h3 span {
+  color:  RGB(45, 255, 251);
+}
+
+.btn-cv {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: orange;
+  border-radius: 4rem;
+  box-shadow:0 0 1rem orange;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  text-decoration: none;
+  margin-bottom: 400px;
+}
+.btn-cv:hover {
+  box-shadow: none;
+  color: #333;
+}
+
+.my-image img{
+  width: 35vw;
+  margin-bottom: 30rem;
+  border-radius: 3%;
+  box-shadow:0 0 .8rem RGB(45, 255, 251);
 }
