@@ -1,3 +1,4 @@
+
 .contact-info{
   display: flex;
   flex-direction: column; /* Add this line to stack child elements vertically */
@@ -7,14 +8,20 @@
   transform: translate(-50%, -50%);
   position: absolute;
   top: 35%;
+  font-family: Montserrat;
+  letter-spacing: 0.08rem;
+  width: 1050px;
 
 }
 
 .contact-form{
   margin-top: 300px;
   margin-left: 320px;
-  width: 900px;
+  width: 1050px;
   color: white;
+  font-family: Montserrat;
+  font-size: 14px;
+  letter-spacing: 0.09rem;
 }
 
 .form-row{
@@ -57,7 +64,12 @@
   color: #333333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow on hover */
 }
-
+/* 
 .btn:active{
     background-color: orange;
+} */
+
+.recaptcha{
+  margin-top: 30px;
+  margin-left: 20px;
 }
