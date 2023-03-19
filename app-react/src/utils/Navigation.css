@@ -31,7 +31,7 @@ body {
   border-radius: 20px;
   background-color: orange;
   color: #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow on hover */
+  box-shadow: 0 0 .4rem orange;
 }
 
 .nav-right-elements span.nav-active-element {
@@ -54,7 +54,7 @@ body {
   color: white;
   text-transform: uppercase;
   cursor: pointer; /* Add cursor pointer on hover */
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   border: 8px solid transparent;
   /* border-bottom: 8px solid orange; */
   border-radius: 0px 0px 0px 0px;
@@ -66,11 +66,15 @@ body {
   /* background-color: orange; */
   border: 8px solid orange;
   /* color: #333333; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow on hover */
+  box-shadow: 0 0 .5rem orange;
 }
 
 .nav-bar{
   margin-top: 40px;
   padding: 20px 0px 20px 0px;
-  background-color:  rgba(78, 177, 186, 0.14);
+  /* background-color:  rgba(78, 177, 186, 0.14); */
+  border-bottom: .3rem solid rgba(78, 177, 186, 0.14);
+  border-top: .1rem solid rgba(78, 177, 186, 0.14);
+  box-shadow: 0 0 .5rem rgba(78, 177, 186, 0.14);
+
 }
