@@ -3,9 +3,12 @@ import "./Contact.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useState } from "react";
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 
 const SITEKEY_ENV = process.env.REACT_APP_RECAPTCHA_TOKEN;
+const service_id = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const template_id = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const public_api = process.env.REACT_APP_EMAILJS_PUBLIC_API;
 
 export function ContactPage(){
 
@@ -41,6 +44,15 @@ function ContactForm(){
       const subject = (document.getElementById("inputSubject") as HTMLInputElement).value;
       const message = (document.getElementById("inputMessage") as HTMLTextAreaElement).value;
 
+      const template = {
+        from_name : name,
+        last_name : lastName,
+        email : email,
+        subject : subject,
+        message : message
+      };
+
+      sendEmail(template);
 
       console.log("submitted ");
       console.log(`Name: ${name}\nLast Name: ${lastName}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
@@ -51,6 +63,21 @@ function ContactForm(){
     }
   }
   
+  function sendEmail(template: { from_name: string; last_name: string; email: string; subject: string; message: string; }) {
+
+
+    if (service_id && template_id && public_api) {
+      emailjs.send(service_id, template_id, template, public_api)
+        .then((result: { text: any; }) => {
+          console.log(result.text);
+        }, (error: any) => {
+          console.log(error.text);
+        });
+    } else {
+      console.log("One or more emailjs variables are undefined", process.env);
+    }
+  }
+
   // function verifyToken(token: string) {
   //   axios.post('/api/verify-recaptcha', { token }, {
   //     headers: {
