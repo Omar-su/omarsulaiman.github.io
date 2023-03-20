@@ -10,17 +10,24 @@
   top: 35%;
   font-family: Montserrat;
   letter-spacing: 0.08rem;
-  width: 1050px;
+  width: 80rem;
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
 
 }
 
+.contact-info span {
+  color:  RGB(45, 255, 251);
+  font-size: 2.9rem;
+}
+
 .contact-form{
-  margin-top: 300px;
-  margin-left: 320px;
-  width: 1050px;
+  margin-top: 19rem;
+  margin-left: 25.5rem;
+  width: 80rem;
   color: white;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 1.6rem;
   letter-spacing: 0.09rem;
 }
 
@@ -31,38 +38,38 @@
 
 .form-group {
   flex: 1; /* Add this line to make the child elements grow to fill the available space */
-  margin-left: 20px; /* Add this line to add some spacing between the child elements */
-  margin-top: 20px
+  margin-left: 1.25rem; /* Add this line to add some spacing between the child elements */
+  margin-top: 1.25rem;
 }
 
 .message-form textarea{
-  height: 200px;
-
+  height: 15rem;
+  font-size: 1.4rem;
 }
 
 
 .btn{
-  margin-left: 20px;
-  margin-top: 70px;
-  width: 150px;
+  margin-left: 1.25rem;
+  margin-top: 3rem;
+  width: 12.5rem;
   background-color:  rgba(78, 177, 186, 0.5);
   color: white;
-  border: 5px solid transparent;
+  border: .4rem solid transparent;
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
   font-family: Montserrat;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 0.09rem;
 }
 
 .btn:hover{
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: orange;
-  border: 5px solid orange;
+  border: .4rem solid orange;
   color: #333333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow on hover */
+  box-shadow: 0 0 1rem orange; /* Add box-shadow on hover */
 }
 /* 
 .btn:active{
@@ -70,6 +77,6 @@
 } */
 
 .recaptcha{
-  margin-top: 30px;
-  margin-left: 20px;
+  margin-top: 2.4rem;
+  margin-left: 1.25rem;
 }

@@ -18,7 +18,7 @@ export function ContactPage(){
     </div>
     <div className="contact-info">
       <div>
-        <h1>CONTACT</h1>
+        <span>CONTACT</span>
         <p>In case you have any questions, are curious about a particular topic, or are interested in a project collaboration, fill out the form below and it will send an email directly to me. </p> 
       </div>
     </div>

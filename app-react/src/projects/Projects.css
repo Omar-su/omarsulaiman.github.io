@@ -8,6 +8,15 @@
   font-size: 41px;
 }
 
+section{
+  margin-top: -3rem;
+}
+
+span {
+  color:  RGB(45, 255, 251);
+  font-size: 4.5rem;
+}
+
 
 .portfolio h2 {
   margin-bottom: 4rem;
@@ -16,8 +25,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 3.5rem;
   color: white;
+  padding-top: 3rem;
 }
 
 .portfolio-container .portfolio-box {
@@ -26,6 +36,8 @@
   box-shadow:0 0 1rem var(--bg-color);
   overflow: hidden;
   display: flex;
+  height: 25rem;
+  width: 40rem;
 }
 
 .portfolio-box img {
