@@ -33,7 +33,7 @@ span {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow:0 0 1rem var(--bg-color);
+  box-shadow:0  0 .4rem RGB(45, 255, 251);
   overflow: hidden;
   display: flex;
   height: 25rem;
@@ -58,7 +58,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, .1), black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,12 +89,12 @@ span {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background: RGB(45, 255, 251, .4);
+  /* background: RGB(45, 255, 251, .4); */
   border-radius: 50%;
 }
 
 .portfolio-layer a i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color : white;
 }
 
