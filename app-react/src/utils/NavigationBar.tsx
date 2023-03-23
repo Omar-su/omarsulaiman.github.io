@@ -16,13 +16,13 @@ export function NavBar() {
 
   return (
     <nav className="navbar nav-bar">
-      <div className="portfolio-name" onClick={() => navigatePage("/home")}>
+      <div className="portfolio-name" onClick={() => navigatePage("/")}>
         Omar Sulaiman
       </div>
       <div className="nav-right-elements">
         <span
-          className={location.pathname === "/home" || activeLink === "/home" ? "nav-active-element" : ""}
-          onClick={() => navigatePage("/home")}
+          className={location.pathname === "/" || activeLink === "/" ? "nav-active-element" : ""}
+          onClick={() => navigatePage("/")}
         >
           Home
         </span>
