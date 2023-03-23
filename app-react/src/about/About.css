@@ -1,0 +1,96 @@
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: RGB(45, 255, 251);
+  --text-color: #fff;
+  --main-color: orange;
+}
+
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0rem 9% 10rem;
+}
+
+span {
+  color:  RGB(45, 255, 251);
+}
+
+.about {
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+.about-image img{
+  width: 35vw;
+  border-radius: 3%;
+  box-shadow:0 0 .8rem RGB(45, 255, 251);
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content{
+  margin-left: 5rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+
+.btn-readmore{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: orange;
+  border-radius: 4rem;
+  box-shadow:0 0 1rem orange;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  text-decoration: none;
+  margin-bottom: 400px;
+}
+.btn-readmore:hover {
+  box-shadow: none;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+
+.add-marker-button{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: orange;
+  border-radius: 4rem;
+  box-shadow:0 0 1rem orange;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  text-decoration: none;
+  margin-bottom: 400px;
+}
+
+.add-marker-button:hover {
+  box-shadow: none;
+  color: #333;
+}

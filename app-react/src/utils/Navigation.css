@@ -1,0 +1,80 @@
+body {
+  background-color:  #00254a  ;
+  padding-bottom: 50px; /* Change the value to adjust the amount of padding */
+  overflow: auto;
+}
+
+.nav-right-elements {
+  margin-right: 140px;
+}
+
+.nav-right-elements span{
+  margin-right: 70px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer; /* Add cursor pointer on hover */
+  transition: border-radius 0.5s ease-in-out;
+  border: 5px solid transparent;
+
+
+}
+
+
+.nav-right-elements span:hover {
+  border-radius: 20px;
+  background-color: orange;
+  color: #333;
+  box-shadow: 0 0 .4rem orange;
+}
+
+.nav-right-elements span.nav-active-element {
+  /* border-radius: 20px 20px 20px 20px; */
+  border: 5px solid orange;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+}
+
+.portfolio-name {
+  margin-left: 140px;
+  padding: 10px;
+  font-family: Arial,Helvetica,sans-serif;
+  line-height: 1.6em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 41px;
+  letter-spacing: .08em;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer; /* Add cursor pointer on hover */
+  transition: all 0.5s ease;
+  border: 8px solid transparent;
+  /* border-bottom: 8px solid orange; */
+  border-radius: 0px 0px 0px 0px;
+
+}
+
+.portfolio-name:hover {
+  border-radius: 20px;
+  /* background-color: orange; */
+  border: 8px solid orange;
+  /* color: #333333; */
+  box-shadow: 0 0 .5rem orange;
+}
+
+.nav-bar{
+  margin-top: 40px;
+  padding: 20px 0px 20px 0px;
+  /* background-color:  rgba(78, 177, 186, 0.14); */
+  border-bottom: .3rem solid rgba(78, 177, 186, 0.14);
+  border-top: .1rem solid rgba(78, 177, 186, 0.14);
+  box-shadow: 0 0 .5rem rgba(78, 177, 186, 0.14);
+
+}

@@ -4,7 +4,10 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",      
+      "es6",
+      "esnext.asynciterable",
+      "scripthost"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -22,5 +25,7 @@
   },
   "include": [
     "src"
-  ]
+, "webpack.config.js",
+"src/**/*",
+"node_modules/emailjs/**/*"  ]
 }

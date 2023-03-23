@@ -1,0 +1,96 @@
+
+.contact-info{
+  display: flex;
+  flex-direction: column; /* Add this line to stack child elements vertically */
+  align-items: center;
+  color: white;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 35%;
+  font-family: Montserrat;
+  letter-spacing: 0.08rem;
+  width: 80rem;
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+
+}
+
+.contact-info span {
+  color:  RGB(45, 255, 251);
+  font-size: 2.9rem;
+}
+
+.contact-form{
+  margin-top: 19rem;
+  margin-left: 25.5rem;
+  width: 80rem;
+  color: white;
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  letter-spacing: 0.09rem;
+}
+
+.form-row{
+  display: flex; /* Add this line to make the child elements placed beside each other */
+  flex-wrap: wrap; /* Add this line to allow the elements to wrap to the next line if necessary */
+}
+
+.form-group {
+  flex: 1; /* Add this line to make the child elements grow to fill the available space */
+  margin-left: 1.25rem; /* Add this line to add some spacing between the child elements */
+  margin-top: 1.25rem;
+}
+
+.form-group input{
+  font-size: 1.5rem;
+  border-color: greenyellow;
+}
+
+.form-group input:invalid{
+  font-size: 1.5rem;
+  border-color: red;
+}
+
+.form-group input:focus {
+  border-color: white;
+}
+
+.message-form textarea{
+  height: 15rem;
+  font-size: 1.45rem;
+}
+
+
+.btn{
+  margin-left: 1.25rem;
+  margin-top: 3rem;
+  width: 12.5rem;
+  background-color:  rgba(78, 177, 186, 0.5);
+  color: white;
+  border: .4rem solid transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  letter-spacing: 0.09rem;
+}
+
+.btn:hover{
+  border-radius: 1.25rem;
+  background-color: orange;
+  border: .4rem solid orange;
+  color: #333333;
+  box-shadow: 0 0 1rem orange; /* Add box-shadow on hover */
+}
+/* 
+.btn:active{
+    background-color: orange;
+} */
+
+.recaptcha{
+  margin-top: 2.4rem;
+  margin-left: 1.25rem;
+}
