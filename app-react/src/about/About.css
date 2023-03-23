@@ -73,3 +73,24 @@ span {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
+
+
+.add-marker-button{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: orange;
+  border-radius: 4rem;
+  box-shadow:0 0 1rem orange;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  text-decoration: none;
+  margin-bottom: 400px;
+}
+
+.add-marker-button:hover {
+  box-shadow: none;
+  color: #333;
+}

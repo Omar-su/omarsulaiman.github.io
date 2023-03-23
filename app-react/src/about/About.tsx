@@ -1,6 +1,7 @@
 import { NavBar } from "../utils/NavigationBar";
 import "./About.css"
 import portfolioMain from '../images/portfolioMain.jpg';
+import MapCon from "./Map";
 
 export function AboutPage(){
 
@@ -19,6 +20,8 @@ export function AboutPage(){
         <p>Hello my name is omar and I work as a TA</p>
         <a href="#" className="btn-readmore"> Read More</a>
       </div>
+      <MapCon></MapCon>
+
     </section>
   </div>);
 
