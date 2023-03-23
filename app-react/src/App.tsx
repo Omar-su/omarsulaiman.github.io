@@ -9,7 +9,7 @@ import { ProjectsPage } from "./projects/Projects";
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<HomePage/> } />
+      <Route path="/" element={<HomePage/> } />
       <Route path="/media" element={<MediaPage/> } />
       <Route path="/projects" element={<ProjectsPage/> } />
       <Route path="/contact" element={<ContactPage/> } />
