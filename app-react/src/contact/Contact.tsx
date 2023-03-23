@@ -52,10 +52,16 @@ function ContactForm(){
         message : message
       };
 
-      sendEmail(template);
 
-      console.log("submitted ");
-      console.log(`Name: ${name}\nLast Name: ${lastName}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+      if ( validateForm(name, lastName, email, subject, message)) {
+        
+        sendEmail(template);
+
+        console.log("submitted ");
+        console.log(`Name: ${name}\nLast Name: ${lastName}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+      }else {
+        alert("Form values should be filled correctly");
+      }
 
     } else {
       // show error message or redirect to CAPTCHA
@@ -76,6 +82,25 @@ function ContactForm(){
     } else {
       console.log("One or more emailjs variables are undefined", process.env);
     }
+  }
+
+
+  function validateForm( name : string, lastName : string, email : string, subject : string, message : string ) { 
+
+    if (name === '' || lastName === '' || email === '' || subject === '' || message === '') {
+      return false;
+    }
+
+    if (!isValidEmail(email)) {
+      return false;
+    }
+
+    return true;
+  }
+  
+  function isValidEmail(email: string) : boolean {
+    var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
   }
 
   // function verifyToken(token: string) {
@@ -112,24 +137,24 @@ function ContactForm(){
       <div className="form-row">
         <div className="form-group col-md-6">
           <label htmlFor="inputEmail4">Name*</label>
-          <input type="text" className="form-control" id="inputName" placeholder="First Name"/>
+          <input type="text" className="form-control" id="inputName" placeholder="First Name" required/>
         </div>
         <div className="form-group col-md-6">
           <label htmlFor="inputPassword4">Last Name</label>
-          <input type="text" className="form-control" id="inputLastName" placeholder="Last Name"/>
+          <input type="text" className="form-control" id="inputLastName" placeholder="Last Name" required/>
         </div>
       </div>
       <div className="form-group">
         <label htmlFor="inputEmail">Email *</label>
-        <input type="email" className="form-control" id="inputEmail" placeholder="name@gmail.com"/>
+        <input type="email" className="form-control" id="inputEmail" placeholder="name@gmail.com" required/>
       </div>
       <div className="form-group">
         <label htmlFor="inputSubject">Subject *</label>
-        <input type="text" className="form-control" id="inputSubject" placeholder="Work opportunity"/>
+        <input type="text" className="form-control" id="inputSubject" placeholder="Work opportunity" required/>
       </div>
       <div className="form-group message-form">
         <label htmlFor="inputSubject">Message *</label>
-        <textarea className="form-control" id="inputMessage" placeholder=""></textarea>
+        <textarea className="form-control" id="inputMessage" placeholder="" required></textarea>
       </div>
       {SITEKEY_ENV ? (<div className="recaptcha">
         <ReCAPTCHA sitekey={SITEKEY_ENV} onChange={onChange} onExpired={onExpired}/>

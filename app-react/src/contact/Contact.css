@@ -42,9 +42,23 @@
   margin-top: 1.25rem;
 }
 
+.form-group input{
+  font-size: 1.5rem;
+  border-color: greenyellow;
+}
+
+.form-group input:invalid{
+  font-size: 1.5rem;
+  border-color: red;
+}
+
+.form-group input:focus {
+  border-color: white;
+}
+
 .message-form textarea{
   height: 15rem;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
 }
 
 
