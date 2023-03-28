@@ -94,3 +94,13 @@ span {
   box-shadow: none;
   color: #333;
 }
+
+.map{
+  display: flex;
+  flex-direction: column; /* Add this line to stack child elements vertically */
+  align-items: center;  
+}
+
+.map-container {
+  border-radius: 40%;
+}

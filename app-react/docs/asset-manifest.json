@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2bfcddc5.css",
+    "main.js": "/static/js/main.bc6a9ab0.js",
+    "static/js/787.96d859b2.chunk.js": "/static/js/787.96d859b2.chunk.js",
+    "static/media/dragonIntro.wav": "/static/media/dragonIntro.a650615a0ced30991264.wav",
+    "static/media/boxicons.svg": "/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/GodAmongUsThumbNail.jpg": "/static/media/GodAmongUsThumbNail.a8015c0634a57baf9ee5.jpg",
+    "static/media/boxicons.eot": "/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/reTwitter.jpg": "/static/media/reTwitter.dc3a279ca0b519243b69.jpg",
+    "static/media/boxicons.woff2": "/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/portfolioMain.jpg": "/static/media/portfolioMain.8add862b42af7f285aa0.jpg",
+    "static/media/figmaMap.jpg": "/static/media/figmaMap.d4f1a75dea86a0813bd0.jpg",
+    "static/media/leefoAll.jpg": "/static/media/leefoAll.96924e5e9a8c33393ca7.jpg",
+    "static/media/imat.jpg": "/static/media/imat.e85eb22e49ae0d8782b7.jpg",
+    "index.html": "/index.html",
+    "main.2bfcddc5.css.map": "/static/css/main.2bfcddc5.css.map",
+    "main.bc6a9ab0.js.map": "/static/js/main.bc6a9ab0.js.map",
+    "787.96d859b2.chunk.js.map": "/static/js/787.96d859b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bfcddc5.css",
+    "static/js/main.bc6a9ab0.js"
+  ]
+}
